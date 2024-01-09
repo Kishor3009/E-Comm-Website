@@ -24,7 +24,7 @@ app.use(morgan("dev"));
 
 //routes
 app.use("https://ecommerce-backend-wxys.onrender.com/api/v1/auth", authRoutes);
-app.use("https://ecommerce-backend-wxys.onrender.com/api/v1/category", categoryRoutes);
+app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
 //rest api
